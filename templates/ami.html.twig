@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1>Amis</h1>
+<ul>
+	{% for ami in tableau_amis %}
+		<li>{{ami.id}} {{ami.nomAmi}} {{ami.prenomAmi}} </li>
+	{%endfor%}
+ </ul>   
+{% endblock %}

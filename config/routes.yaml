@@ -1,0 +1,19 @@
+# modification
+ami_modify_ami:
+    path: /ami/modify/{id}
+    controller: App\Controller\AmiController::modify
+
+# ajout d'un nouvel ami
+ami_new_ami:
+    path: /ami/new
+    controller: App\Controller\AmiController::new
+
+#affichage de tous les amis
+ami_recupere_index:
+    path: /ami/
+    controller: App\Controller\AmiController::index
+
+# suppression d'un ami 
+ami_delete_index:
+    path: /ami/delete/{id}
+    controller: App\Controller\AmiController::index_delete_ami
